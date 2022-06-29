@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formDiv {
+  border: 2px solid #888;
+  width: 400px;
+  height: 150px;
+  padding: 3vh 5vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
+  object-fit: contain;
+  
+}
+
+.btnGo {
+  width: 100%;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 1vh;
+  color: white
+}
+
+.inputKorisnik {
+  width: 95%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 1vh;
+  margin-top: 1vh;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.mainData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+.repoData {
+  width: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.naslov {
+  font-size: 6vh;
+  padding-left: 30px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  padding: 1vh;
+}
+
+.btnReset {
+  margin-top: 1vh;
+  width: 100%;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 1vh;
+  color: white
+}
+
+.sviPodaci {
+  border: 1px solid black;
+  padding: 5vh;
+  margin: 5vh;
 }
